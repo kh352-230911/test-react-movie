@@ -1,0 +1,27 @@
+:root {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+nav {
+  padding: 50px;
+}
+table {
+  width: 100%;
+}
+
+form div {
+  display: grid;
+  /* grid 컬럼지정 */
+  /* repeat(반복횟수, 컬럼옵션) */
+  /* - 4번반복이니까 4열 */
+  /* - 내용에 따른 최소최대 크기지정 : 0 ~ 1fr(열의 너비가 동일하게 분리했을때 크기를 가리키는 단위. 예를 들어, 4열에서 1fr은 너비의 25%이다.) */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+form label {
+  grid-column-start: 2;
+  text-align: right;
+  padding-right: 10px;
+}
