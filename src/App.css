@@ -7,6 +7,8 @@
 }
 nav {
   padding: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 table {
   width: 100%;

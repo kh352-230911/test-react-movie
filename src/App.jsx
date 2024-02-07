@@ -22,7 +22,7 @@ function App() {
   };
   return (
     <>
-      <nav style={{display: 'flex', justifyContent: 'space-between'}}>
+      <nav>
         <Link to="/">List</Link>
         <Link to="/addMovie">Add New Movie</Link>
       </nav>
